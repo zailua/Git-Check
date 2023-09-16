@@ -8,10 +8,10 @@ export const Container = styled.div`
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 	padding: 30px;
 	margin: 80px auto;
-	h1{
+	h1 {
 		font-size: 30px;
 		text-align: center;
-		color: #ffb7c5;	
+		color: #ffb7c5;
 		margin-top: 20px;
 	}
 `
@@ -64,8 +64,6 @@ export const IssuesList = styled.ul`
 	li {
 		display: flex;
 		padding: 15px 10px;
-		
-		
 
 		& + li {
 			margin-top: 12px;
@@ -81,7 +79,7 @@ export const IssuesList = styled.ul`
 			flex: 1;
 			margin-left: 12px;
 
-			p{
+			p {
 				margin-top: 10px;
 				font-size: 12px;
 				color: #000;
@@ -90,7 +88,6 @@ export const IssuesList = styled.ul`
 
 		strong {
 			font-size: 15px;
-			
 
 			a {
 				text-decoration: none;
@@ -102,56 +99,53 @@ export const IssuesList = styled.ul`
 				}
 			}
 
-			span{
-			 	background: #ff2;
-				color: #fff; 
+			span {
+				background: #ff2;
+				color: #fff;
 				border-radius: 4px;
 				font-size: 12px;
 				font-weight: 600;
 				padding: 5px 7px;
 				margin-left: 10px;
-				
-
 			}
 		}
 	}
 `
 
 export const PageButton = styled.div`
-display: flex;
-justify-content: space-between;
-align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
-button{
-	background: #ffb7c5;
-	border: 0;
-	padding: 0 15px;
-	border-radius: 4px;
-	height: 40px;
-	font-weight: 600;
-	cursor: pointer;
+	button {
+		background: #ffb7c5;
+		border: 0;
+		padding: 0 15px;
+		border-radius: 4px;
+		height: 40px;
+		font-weight: 600;
+		cursor: pointer;
 
-	&:disabled{
-		cursor: not-allowed;
-		opacity: 0.5;
-		
+		&:disabled {
+			cursor: not-allowed;
+			opacity: 0.5;
+		}
 	}
-}
 `
 export const FilterList = styled.div`
-margin: 15px 0;
+	margin: 30px 0;
+	display: flex;
+	justify-content: center;
 
-button{
-	outline: auto;
-	border: 0;
-	padding: 8px;
-	border-radius: 4px;
-	margin: 0 3px;
-}
-
-&:nth-child(${props => props.active + 1}){
-	background: #ffb7c5;
-	color: #fff;
-}
-
+	button {
+		outline: #ffb7c5 1px solid;
+		border: 0;
+		padding: 8px;
+		border-radius: 4px;
+		margin: 0 3px;
+		&:nth-child(${(props) => props.active + 1}) {
+			background: #ffb7c5;
+			color: #fff;
+		}
+	}
 `
